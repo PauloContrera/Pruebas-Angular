@@ -8,6 +8,7 @@ import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
 import { UsarioComponent } from './usario/usario.component';
 import { BotonesComponent } from './botones/botones.component';
 import { TextoAleatorioComponent } from './texto-aleatorio/texto-aleatorio.component';
+import { BaseDeDatosComponent } from './base-de-datos/base-de-datos.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TextoAleatorioComponent } from './texto-aleatorio/texto-aleatorio.compo
     HolaMundoComponent,
     UsarioComponent,
     BotonesComponent,
-    TextoAleatorioComponent
+    TextoAleatorioComponent,
+    BaseDeDatosComponent
   ],
   imports: [
     BrowserModule,
