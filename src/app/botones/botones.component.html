@@ -1,0 +1,39 @@
+<h1>eventos en botones</h1>
+<form (submit)="agregarUsuario(NuevoUsuario)">
+    <input type="text" #NuevoUsuario>
+    <button >Guardar</button>
+</form>
+<ul>
+    <li *ngFor="let persona of usuarios">
+        {{ persona}}
+        <button (click)="borrarUsuario(persona)">Borrar</button>
+    </li>
+</ul>
+<button (click)="decirHola()"> click me</button>
+
+
+
+<div>
+    <br><br><br>
+    <h2>tipo formulario</h2>
+    <form>
+        <input type="text" name="name"[(ngModel)]="name">
+        <input type="text" name="age"[(ngModel)]="age">
+        <!-- Hay que activar la propiedad para que angular no tire erron
+        en appmodule
+import {FormsModule}from '@angular/forms';
+
+a su vez agregar FormsModule en el import
+ imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+  ],
+    -->
+    </form>
+</div>
+<div>
+    Nombre: {{name}}
+    <br>
+    Edad: {{age}}
+</div>

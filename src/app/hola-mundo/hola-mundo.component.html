@@ -1,0 +1,36 @@
+<h2>Recorer vector</h2>
+
+  <ul>
+    <li *ngFor="let persona of usuario">
+      {{persona}}
+    </li>
+  </ul>
+
+<h2>Usando if</h2>
+    <p *ngIf="activado"> Estamos redi papu</p>
+
+<h2>Ahora vamos a trabajar con component</h2>
+  <ul>
+    <li *ngFor="let persona of usuario">
+      <app-usario [usuario]="persona"></app-usario>
+    </li>
+    <!-- Crea un li a dentro llama el componente usiario -->
+  </ul>
+
+
+  <h2>Con objetos</h2>
+  <div>
+    <p>Nombre: {{name}}</p>
+    <p>Edad: {{age}}</p>
+    <p>Hobbies:</p>
+    <ul>
+      <li *ngFor="let hobby of hobbies">{{hobby}}</li>
+    </ul>
+    <p>dirrecion: </p>
+    <ul>
+      <li>{{address.street}}</li>
+      <li>{{address.city}}</li>
+    </ul>
+  </div>
+
+  

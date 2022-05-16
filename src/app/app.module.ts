@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {FormsModule}from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HolaMundoComponent } from './hola-mundo/hola-mundo.component';
+import { UsarioComponent } from './usario/usario.component';
+import { BotonesComponent } from './botones/botones.component';
+import { TextoAleatorioComponent } from './texto-aleatorio/texto-aleatorio.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HolaMundoComponent,
+    UsarioComponent,
+    BotonesComponent,
+    TextoAleatorioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
